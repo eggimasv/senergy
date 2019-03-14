@@ -1,10 +1,26 @@
+sudo: false
 language: python
-python:
-  - "3.6"
-
-# command to install dependencies
+virtualenv:
+  system_site_packages: true
+env:
+  matrix:
+  - DISTRIB="conda" PYTHON_VERSION="3.5" COVERAGE="true"
 install:
-  - pip install -r requirements.txt
-# command to run tests
+- source tests/travis_install.sh
+before_script:
+- git config --global user.email "sven.eggimann@ouce.ox.ac.uk"
+- git config --global user.name "Sven Eggimann"
 script:
-  - pytest
+- python setup.py test
+after_success:
+- if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
+notifications:
+  email: false
+deploy:
+  provider: pypi
+  user: eggimasv
+  password:
+    secure:
+  on:
+    tags: true
+    branch: master
