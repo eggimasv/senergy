@@ -26,7 +26,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="synergy",
-    version="v0.0.6",
+    version="v0.0.8",
     author="Example Author",
     author_email="sven.eggimann@ouce.ox.ac.uk",
     description="A small example package",
