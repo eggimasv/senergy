@@ -8,13 +8,11 @@
     PyScaffold helps you to put up the scaffold of your new Python project.
     Learn more under: https://pyscaffold.org/
 """
-import sys
-
-from pkg_resources import require, VersionConflict
 from glob import glob
 from os.path import basename, splitext
-from setuptools import setup
+
 from setuptools import find_packages
+from setuptools import setup
 
 def readme():
     """Read README contents
