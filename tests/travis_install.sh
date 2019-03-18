@@ -29,15 +29,15 @@ if [[ "$DISTRIB" == "conda" ]]; then
     conda env create -f .environment.yml -n testenv
     source activate testenv
 
-    if [[ "$PYTHON_VERSION" == "3.5" ]]; then
-        # Pin libgcc as possible root cause of fiona/shapely shared library import errors
-        conda install --yes libgcc-ng==7.2.0
-    fi
+    #if [[ "$PYTHON_VERSION" == "3.5" ]]; then
+    #    # Pin libgcc as possible root cause of fiona/shapely shared library import errors
+    #    conda install --yes libgcc-ng==7.2.0
+    #fi
 fi
 
-if [[ "$COVERAGE" == "true" ]]; then
-    pip install coverage coveralls
-fi
+#if [[ "$COVERAGE" == "true" ]]; then
+#    pip install coverage coveralls
+#fi
 
 # Pip install by default
 pip install -r requirements.txt
