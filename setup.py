@@ -23,6 +23,8 @@ def readme():
 setup(
     name='senergy',
     version='0.1.2',
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     license='MIT License',
     description='description',
     long_description=readme(),
