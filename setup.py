@@ -8,6 +8,7 @@
     PyScaffold helps you to put up the scaffold of your new Python project.
     Learn more under: https://pyscaffold.org/
 """
+import glob
 from setuptools import find_packages
 from setuptools import setup
 
