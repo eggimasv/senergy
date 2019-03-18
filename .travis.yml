@@ -5,8 +5,8 @@ virtualenv:
 env:
   matrix:
   - DISTRIB="conda" PYTHON_VERSION="3.5" COVERAGE="true"
-install:
-- source tests/travis_install.sh
+#install:
+#- source tests/travis_install.sh
 before_script:
 - git config --global user.email "sven.eggimann@gmail.com"
 - git config --global user.name "Sven Eggimann"
