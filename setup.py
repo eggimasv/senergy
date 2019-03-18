@@ -11,15 +11,10 @@
 import sys
 
 from pkg_resources import require, VersionConflict
+from glob import glob
+from os.path import basename, splitext
 from setuptools import setup
-
-try:
-    require('setuptools>=38.3')
-except VersionConflict:
-    print("Error: version of setuptools is too old (<38.3)!")
-    sys.exit(1)
-
-import setuptools
+from setuptools import find_packages
 
 def readme():
     """Read README contents
