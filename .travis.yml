@@ -18,6 +18,8 @@ before_script:
 - git config --global user.name "Sven Eggimann"
 #script:
 #- python setup.py test #- python -m pytest tests
+script:
+  - python -m pytest tests
 #after_success:
 #- if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 #notifications:
