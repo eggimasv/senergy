@@ -13,8 +13,6 @@ python:
 #- source tests/travis_install.sh
 install:
   - pip install -r requirements.txt
-  - python setup.py install
-  - pip freeze
 before_script:
 - git config --global user.email "sven.eggimann@gmail.com"
 - git config --global user.name "Sven Eggimann"
