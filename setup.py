@@ -8,10 +8,7 @@
     PyScaffold helps you to put up the scaffold of your new Python project.
     Learn more under: https://pyscaffold.org/
 """
-from glob import glob
-from os.path import basename, splitext
 
-from setuptools import find_packages
 from setuptools import setup
 
 def readme():
