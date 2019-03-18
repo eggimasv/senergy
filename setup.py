@@ -19,7 +19,7 @@ from setuptools import find_packages
 def readme():
     """Read README contents
     """
-    with open('README.rst') as f:
+    with open('README.rm') as f:
         return f.read()
 
 setup(
