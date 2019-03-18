@@ -17,12 +17,12 @@ from setuptools import setup
 def readme():
     """Read README contents
     """
-    with open('README.rm') as f:
+    with open('README.rst') as f:
         return f.read()
 
 setup(
     name='senergy',
-    version='0.1.2',
+    #version='0.1.2',
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
     license='MIT License',
