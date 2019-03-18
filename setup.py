@@ -56,7 +56,6 @@ setup(
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
     install_requires=[
-        # eg: 'aspectlib==1.1.1', 'six>=1.7',
         'fiona>=1.7.13',
         'shapely>=1.6',
         'geopandas==0.4.0',
