@@ -17,7 +17,7 @@ before_script:
 - git config --global user.email "sven.eggimann@gmail.com"
 - git config --global user.name "Sven Eggimann"
 script:
-- python setup.py tests #- python -m pytest tests
+- python setup.py test #- python -m pytest tests
 #script:
 #  - python -m pytest tests
 #after_success:
