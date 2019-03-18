@@ -14,10 +14,10 @@ from os.path import basename, splitext
 from setuptools import find_packages
 from setuptools import setup
 
-def readme():
+def readme(filename):
     """Read README contents
     """
-    with open('README.rst') as f:
+    with open(filename) as f:
         return f.read()
 
 setup(
@@ -27,7 +27,7 @@ setup(
     setup_requires=['setuptools_scm'],
     license='MIT License',
     description='description',
-    long_description=readme(),
+    long_description=readme('README.rst'),
     long_description_content_type="text/markdown",
     author='Sven Eggimann',
     author_email='sven.eggimann@gmail.com',
